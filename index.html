@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>General Anil Chauhan Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .profile-container {
+      width: 600px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .top-section {
+      background-color: #8b0000; 
+      height: 200px;
+      position: relative;
+    }
+
+    .bottom-section {
+      background-color: #8d8d8d;
+      padding-top: 100px;
+      border-bottom-right-radius: 50px;
+      padding-bottom: 20px;
+    }
+
+   .profile-pic {
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid black;
+      background-color: #6b5e5e;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('data:image/jpeg;base64,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'); 
+    }
+
+    .profile-info {
+      padding: 20px 30px;
+      color: black;
+    }
+
+    .profile-info h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .profile-info p {
+      font-weight: bold;
+      line-height: 1.6;
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    .awards-section {
+      margin-top: 20px;
+    }
+
+    .awards-section h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .awards-section ul {
+      padding-left: 20px;
+    }
+
+    .awards-section li {
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="profile-container">
+  <div class="top-section">
+    <div class="profile-pic"></div>
+  </div>
+  <div class="bottom-section">
+    <div class="profile-info">
+      <h2>General Anil Chauhan</h2>
+      <p>
+        General Anil Chauhan is the second Chief of Defence Staff (CDS) of India. He assumed office on 30 September 2022. 
+        A retired four-star General of the Indian Army, he previously served as the General Officer Commanding-in-Chief of the Eastern Command.
+        <br><br>
+        Born on 18 May 1961, he was commissioned into the 11 Gorkha Rifles in 1981. A graduate of the National Defence Academy and Indian Military Academy, General Chauhan held key positions including Director General of Military Operations (DGMO) during the 2019 Balakot air strikes and handled critical roles in counter-insurgency operations in Jammu & Kashmir and the Northeast.
+        <br><br>
+        He retired from the Army in May 2021 and was later appointed as Military Adviser to the National Security Council Secretariat.
+      </p>
+
+      <div class="awards-section">
+        <h3>Awards & Achievements</h3>
+        <ul>
+          <li>Param Vishisht Seva Medal (PVSM)</li>
+          <li>Uttam Yudh Seva Medal (UYSM)</li>
+          <li>Ati Vishisht Seva Medal (AVSM)</li>
+          <li>Sena Medal (SM)</li>
+          <li>Vishisht Seva Medal (VSM)</li>
+          <li>Appointed India’s 2nd Chief of Defence Staff (CDS)</li>
+          <li>Key role in 2019 Balakot air strike planning</li>
+          <li>Held command positions in Northeast and J&K operations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
